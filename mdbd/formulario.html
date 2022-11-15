@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title> MODELO DE NEGÓCIO COMPANHIA DE SEGUROS DE AUTOMÓVEIS </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+</head>
+<body style="margin-bottom: 200px;padding: 60px; height: 1750px;">
+  
+  <h3 class="text-info rounded font-weight-bold text-light bg-dark" style="text-align: center; padding: 50px;">FORMULÁRIO PARA CADASTRO DE CLIENTES</h3><br>
+
+  <!--      ------------FORMULARIO---------           -->
+  <div class="rounded" style="background-color: rgb(224, 224, 224);">
+    <form name="Cadastro" action="cadastrar-cliente.php" method="POST" style="margin-bottom: 200px;padding: 60px;">
+      
+        <fieldset class="form-group">
+          <h4 class="font-weight-bold">Informações do cliente</h4><br>
+            <label>Nome do Cliente: </label>
+            <input class="form-control form-control-sm" type="text" name="nome" maxlength="50" placeholder="Digite seu nome"><br>
+          
+            <label>RG: </label>
+            <input class="form-control form-control-sm" type="number" name="rg" maxlength="9" placeholder="Digite seu RG"><br>
+
+            <label>CPF: </label>
+            <input class="form-control form-control-sm" type="number" name="cpf" maxlength="11" placeholder="Digite seu CPF"><br>
+
+            <label>Telefone: </label>
+            <input class="form-control form-control-sm" type="number" name="telefone" maxlength="10" placeholder="Digite seu telefone" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}"><script type="text/javascript">$("#telefone").mask("(00) 0000-00009");</script><br>
+
+            <label>Endereço: </label>
+            <input class="form-control form-control-sm" type="text" name="endereco" maxlength="150" placeholder="Digite seu usuário"><br>
+        </fieldset>
+        
+      <h4 class="font-weight-bold">Informações do carro</h4><br>
+        <fieldset class="form-group">
+            <label>Placa: </label>
+            <input class="form-control form-control-sm" type="text" name="placa" maxlength="8" placeholder="Digite a placa de seu carro"><br>
+        
+            <label>Renavan: </label>
+            <input class="form-control form-control-sm" type="number" name="renavan" maxlength="11" placeholder="Digite o código do renavan"><br>
+        
+            <label>Fabricante: </label>
+            <input class="form-control form-control-sm" type="text" name="fabricante" maxlength="50" placeholder="Digite o nome do fabricante"><br>
+        
+            <label>Modelo: </label>
+            <input class="form-control form-control-sm" type="text" name="modelo" maxlength="50" placeholder="Digite o modelo de seu carro"><br>
+        
+            <label>Ano: </label>
+            <input class="form-control form-control-sm" type="number" name="ano" maxlength="4" placeholder="Digite o ano de seu carro"><br>
+        </fieldset>
+
+      <h4 class="font-weight-bold">Informações da ocorrência</h4><br>
+        <fieldset class="form-group">
+            <label>Número da ocorrência: </label>
+            <input class="form-control form-control-sm" type="number" name="ocorrencia" maxlength="8" placeholder="Digite o número da ocorrência"><br>
+        
+            <label>Data: </label>
+            <input class="form-control form-control-sm" type="date" name="data"><br>
+        
+            <label>Local: </label>
+            <input class="form-control form-control-sm" type="text" name="local" maxlength="60" placeholder="Digite o local"><br>
+        
+            <label>Descrição: </label>
+            <input class="form-control form-control-sm" type="text" name="descricao" maxlength="120"><br>
+        </fieldset>
+
+            <input type="submit" name="enviar" value="Enviar" class="form-control form-control-sm, btn btn-outline-dark">
+    </form>
+  </div>
+  <!--      ------------ FIM FORMULARIO---------           -->
+  
+  <!--           ----------JAVASCRIPT BOOTSTRAP-----------           -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
